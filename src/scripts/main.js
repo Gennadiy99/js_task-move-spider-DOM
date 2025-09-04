@@ -3,12 +3,12 @@
 const spider = document.querySelector('.spider');
 
 if (spider.complete && spider.naturalWidth > 0) {
-  spiederMove();
+  spiderMove();
 } else {
-  spider.addEventListener('load', spiederMove);
+  spider.addEventListener('load', spiderMove);
 }
 
-function spiederMove() {
+function spiderMove() {
   const field = document.querySelector('.wall');
   const fieldWidth = field.offsetWidth;
   const fieldHeight = field.offsetHeight;
